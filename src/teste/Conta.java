@@ -9,7 +9,7 @@ package teste;
  * @author brane
  */
 public class Conta {
-    private String nome;
+    private final String nome;
     private double saldo;
 
     public Conta(String nome, double depositoInicial) {
@@ -31,4 +31,13 @@ public class Conta {
         this.saldo = this.saldo - retira;
         return true;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+    
 }
